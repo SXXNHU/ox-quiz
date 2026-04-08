@@ -1,19 +1,37 @@
 # ox-quiz
 
-시험기간 감성으로 만든 모바일 OX 퀴즈 웹입니다.  
-빠르게 보고 누르는 흐름에 맞춰 타이머, 즉시 피드백, 결과 화면, 마무리 모달까지 한 번에 이어지도록 구성했습니다.
+시험기간 감성으로 만든 모바일 OX 퀴즈 웹앱입니다.  
+빠르게 문제를 풀고, 제한 시간 안에 O/X를 고르면 즉시 결과와 마무리 화면까지 이어집니다.
 
-## 실행 방법
+## Stack
 
-1. `npm install`
-2. `npm run dev`
+- React
+- TypeScript
+- Vite
 
-배포용 빌드
+## Features
 
-1. `npm run build`
-2. `npm run preview`
+- 모바일 우선 OX 퀴즈 UI
+- 문제별 제한 시간 진행
+- 정답 선택 직후 피드백 표시 후 다음 문제 이동
+- 결과 화면에서 점수와 소요 시간 요약
+- 시험기간 밈 톤의 카피와 비주얼
 
-## 구조
+## Run
+
+```bash
+npm install
+npm run dev
+```
+
+Production build:
+
+```bash
+npm run build
+npm run preview
+```
+
+## Structure
 
 ```text
 src/
@@ -30,15 +48,13 @@ src/
    └─ quizzes.ts
 ```
 
-## 주요 포인트
+## Edit Points
 
-- 모바일 세로 화면 기준으로 레이아웃을 맞췄습니다.
-- 문제마다 제한 시간이 있고 시간이 끝나면 자동으로 다음 문제로 넘어갑니다.
-- O/X 선택 직후 정답과 해설을 짧게 보여준 뒤 다음 문제로 진행합니다.
-- 결과 화면에서는 총 소요 시간을 보여주고, 잠시 뒤 마무리 이미지를 모달로 띄웁니다.
+- 문제, 정답, 해설 수정: `src/data/quizzes.ts`
+- 진행 시간과 화면 흐름 수정: `src/App.tsx`
+- 결과 화면 문구 수정: `src/components/ResultScreen.tsx`
+- 전체 스타일 수정: `src/styles.css`
 
-## 수정 포인트
+## Deploy
 
-- 문제/정답/해설 수정: `src/data/quizzes.ts`
-- 문제 진행 시간, 정답 표시 시간 수정: `src/App.tsx`
-- 전체 모바일 UI 스타일 수정: `src/styles.css`
+Vercel에 정적 프론트엔드로 배포할 수 있습니다.
