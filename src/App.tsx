@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import endingImage from './assets/hero.png'
+import endingImage from './assets/please.png'
 import { QuizCard } from './components/QuizCard'
 import { ResultScreen } from './components/ResultScreen'
 import { quizzes } from './data/quizzes'
@@ -185,9 +185,9 @@ function App() {
                   <p className="ending-image-kicker">공부하러 간다며...</p>
                   <h2 id="ending-image-title">근데 마지막 인사는 보고 가야죠</h2>
                   <p className="ending-image-copy">
-                    여기까지 온 김에 마지막 사진도 보고 가세요.
+                    이제 떠나가기 전에 마지막 사진만 보고 가세요.
                     <br />
-                    살짝 쉬어가는 보너스 화면입니다.
+                    이쯤 웃어가야 본론으로 돌아갑니다.
                   </p>
                   <figure className="ending-figure">
                     <img
