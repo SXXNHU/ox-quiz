@@ -183,12 +183,7 @@ function App() {
                     ×
                   </button>
                   <p className="ending-image-kicker">공부하러 간다며...</p>
-                  <h2 id="ending-image-title">근데 마지막 인사는 보고 가야죠</h2>
-                  <p className="ending-image-copy">
-                    이제 떠나가기 전에 마지막 사진만 보고 가세요.
-                    <br />
-                    이쯤 웃어가야 본론으로 돌아갑니다.
-                  </p>
+                  <h2 id="ending-image-title">그래도 마지막 인사는 보고 가야죠</h2>
                   <figure className="ending-figure">
                     <img
                       src={endingImage}
