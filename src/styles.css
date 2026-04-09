@@ -1,5 +1,14 @@
+@font-face {
+  font-family: 'OngleipParkDahyeon';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2411-3@1.0/Ownglyph_ParkDaHyun.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-display: swap;
+}
+
 :root {
   font-family:
+    'OngleipParkDahyeon',
     "Pretendard Variable",
     "Pretendard",
     "Noto Sans KR",
@@ -27,6 +36,23 @@
     0 4px 16px rgba(61, 75, 107, 0.06);
 }
 
+html,
+body,
+#root,
+.app-shell,
+.mobile-frame,
+.quiz-screen,
+.result-screen,
+.ending-image-section {
+  font-family:
+    'OngleipParkDahyeon',
+    "Pretendard Variable",
+    "Pretendard",
+    "Noto Sans KR",
+    "Apple SD Gothic Neo",
+    sans-serif;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -39,6 +65,7 @@ body {
   margin: 0;
   min-width: 320px;
   color: var(--text-main);
+  font-family: inherit;
 }
 
 body::before {
@@ -57,6 +84,13 @@ input,
 textarea,
 select {
   font: inherit;
+  font-family:
+    'OngleipParkDahyeon',
+    "Pretendard Variable",
+    "Pretendard",
+    "Noto Sans KR",
+    "Apple SD Gothic Neo",
+    sans-serif;
 }
 
 button {
